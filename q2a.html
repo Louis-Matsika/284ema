@@ -1,51 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OU Walking Club</title>
+  </head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>OU Walking Club</title>
-    </head>
-    
-    <body>
-        <div>
-            <form action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php" method="get">
-        <label for="leadername">Name of leader:</label><br>
-        <input type="text" id="leadername" name="leadername"><br>
+  <body>
+    <div>
+      <form
+        action="http://students.open.ac.uk/mct/tt284/reflect/reflect.php"
+        method="get"
+      >
+        <label for="leadername">Name of leader:</label><br />
+        <input type="text" id="leadername" name="leadername" /><br />
 
-        <label for="walkname">Name of Walk:</label><br>
-        <input type="text" id="walkname" name="walkname"><br>
-        
-        <label for="date">Date:</label><br>
-        <input type="date" id="date" name="date"><br>
+        <label for="walkname">Name of Walk:</label><br />
+        <input type="text" id="walkname" name="walkname" /><br />
 
-        <label for="starttime">Start time:</label><br>
-        <input type="time" id="starttime" name="starttime"><br>
+        <label for="date">Date:</label><br />
+        <input type="date" id="date" name="date" /><br />
 
-        <label for="endtime">End time:</label><br>
-        <input type="time" id="endtime" name="endtime"><br>
+        <label for="starttime">Start time:</label><br />
+        <input type="time" id="starttime" name="starttime" /><br />
 
-        <label for="meetingpoint">Meeting point:</label><br>
-        <input type="text" id="meetingpoint" name="meetingpoint"><br>
+        <label for="endtime">End time:</label><br />
+        <input type="time" id="endtime" name="endtime" /><br />
 
-        <label for="Distance">Distance in kilometres:</label><br>
-        <input type="number" id="Distance" name="Distance"><br>
+        <label for="meetingpoint">Meeting point:</label><br />
+        <input type="text" id="meetingpoint" name="meetingpoint" /><br />
 
-        <label for="comments">Comments:</label><br>
-        <input type="text" id="comments" name="comments"><br>
-        
-        <label for="status">Status:</label><br>
-        <input type="checkbox" id="statusproposed" name="statusproposed" value="proposed">
-        <label for="status">Proposed</label><br>
-        <input type="checkbox" id="statusapproved" name="statusapproved" value="approved">
-        <label for="status">Approved</label><br>
-        <input type="checkbox" id="statusrejected" name="statusrejected" value="rejected">
-        <label for="status">Rejected</label><br>
+        <label for="Distance">Distance in kilometres:</label><br />
+        <input type="number" id="Distance" name="Distance" /><br />
 
-        <input type="hidden" id="sessionID" name="sessionID" value="abcd1234-ee56-ff78-9090">
+        <label for="comments">Comments:</label><br />
+        <input type="text" id="comments" name="comments" /><br />
 
-        <input type="submit" value="Submit">
-            </form>
-        </div>
-    </body>
+        <label for="status">Status:</label><br />
+        <input
+          type="checkbox"
+          id="statusproposed"
+          name="statusproposed"
+          value="proposed"
+        />
+        <label for="status">Proposed</label><br />
+        <input
+          type="checkbox"
+          id="statusapproved"
+          name="statusapproved"
+          value="approved"
+        />
+        <label for="status">Approved</label><br />
+        <input
+          type="checkbox"
+          id="statusrejected"
+          name="statusrejected"
+          value="rejected"
+        />
+        <label for="status">Rejected</label><br />
+
+        <input
+          type="hidden"
+          id="sessionID"
+          name="sessionID"
+          value="abcd1234-ee56-ff78-9090"
+        />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
 </html>
