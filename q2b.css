@@ -1,0 +1,149 @@
+/* Remove all the default margin and padding so it's easier to style the page later.
+Making the box-sizing to border-box so the padding and border doen't ruin / change the original sizing. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: #e8e5d6;
+}
+
+/* HEADER */
+
+header {
+  /* Set display to flex, to make all elements inside header line up horizontally. */
+  display: flex;
+  /* Center elements inside header horizontally */
+  align-items: center;
+  /* Center elements inside header vertically */
+  justify-content: center;
+
+  background-color: #123552;
+  border-bottom: 2px solid black;
+  padding: 10px 50px;
+}
+
+/* Changed the display to grid to make the elements line up vertically instead of horizontally so the page is responsive and friendly to mobile. */
+
+@media (max-width: 400px) {
+  header {
+    display: grid;
+    grid-template-rows: 40px 60px 150px;
+    justify-items: center;
+    gap: 40px;
+  }
+}
+
+.header-title {
+  color: #fff;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 0 50px;
+}
+
+/* Display flex to make nav links line up next to each other horizontally. Also center them nicely in the header.*/
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 10px;
+}
+
+/* *MOBILE* Making the nav links responsive and friendly to mobile devices by making the nav links be underneath each other instead of on a horizontal line.
+Only applies to devices under 400px, so it doesn't damage the design for other device sizes.*/
+
+@media (max-width: 400px) {
+  .navbar-links {
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+    align-content: center;
+  }
+}
+
+/* Styling the nav links */
+nav a:link {
+  color: #fff;
+}
+
+/* Making it so that nav links doesn't change colours when visited */
+nav a:visited {
+  color: #fff;
+}
+
+/* FORM */
+
+#form-div {
+  /* Using % for width so it's responsive for mobile device aswell.*/
+  width: 80%;
+  margin: 50px auto;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 30px;
+  background-color: #b6d3ec;
+}
+
+.form-items {
+  margin-bottom: 12px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+label {
+  font-weight: 600;
+}
+
+.input-field {
+  margin-top: 2px;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+#leadername,
+#walkname,
+#comments,
+#meetingpoint,
+#Distance {
+  width: 100%;
+}
+
+#comments {
+  height: 40px;
+}
+
+/* CHECKBOX */
+
+.status-checkbox {
+  margin: 5px 0;
+}
+
+.status-checkbox label {
+  font-weight: 500;
+}
+
+.status-checkbox input {
+  cursor: pointer;
+}
+
+/* SUBMIT BUTTON */
+.submit-button {
+  font-size: 16px;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /* Making the cursor a pointer / hand when hovering over the button */
+  cursor: pointer;
+  background-color: #fff;
+}
